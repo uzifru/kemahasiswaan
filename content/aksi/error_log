@@ -1,0 +1,95 @@
+[21-Jan-2019 10:18:55 UTC] PHP Notice:  Undefined index: aksi in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteagenda.php on line 7
+[21-Jan-2019 10:18:55 UTC] PHP Notice:  Undefined index: aslina in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteagenda.php on line 8
+[21-Jan-2019 10:18:57 UTC] PHP Notice:  Undefined index: aslina in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteagenda.php on line 8
+[21-Jan-2019 10:18:57 UTC] PHP Notice:  Undefined index: posting in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteagenda.php on line 10
+[21-Jan-2019 18:43:05 Asia/Jakarta] PHP Warning:  move_uploaded_file(../../../images/slide/slider_3.jpg): failed to open stream: No such file or directory in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 36
+[21-Jan-2019 18:43:05 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpgwIiYd' to '../../../images/slide/slider_3.jpg' in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 36
+[21-Jan-2019 15:39:48 UTC] PHP Notice:  Undefined index: editmenus in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 36
+[21-Jan-2019 15:39:48 UTC] PHP Notice:  Undefined index: menuid in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 57
+[23-Jan-2019 05:32:46 UTC] PHP Warning:  move_uploaded_file(): The second argument to copy() function cannot be a directory in /home/blokcode/public_html/unigal/mimin/content/aksi/updateprofil.php on line 38
+[23-Jan-2019 05:32:46 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpEfS8Wf' to '../../../images/logo/' in /home/blokcode/public_html/unigal/mimin/content/aksi/updateprofil.php on line 38
+[23-Jan-2019 05:37:36 UTC] PHP Notice:  Undefined index: posting in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 10
+[23-Jan-2019 05:37:39 UTC] PHP Notice:  Undefined index: posting in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 10
+[23-Jan-2019 09:22:34 UTC] PHP Notice:  Undefined index: text_warna in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahslide.php on line 11
+[23-Jan-2019 09:24:39 UTC] PHP Notice:  Undefined index: textbesar in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahslide.php on line 8
+[23-Jan-2019 09:24:39 UTC] PHP Notice:  Undefined index: text_warna in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahslide.php on line 11
+[23-Jan-2019 09:26:32 UTC] PHP Notice:  Undefined index: text_warna in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahslide.php on line 11
+[23-Jan-2019 09:28:34 UTC] PHP Notice:  Undefined index: posting in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 10
+[23-Jan-2019 09:34:01 UTC] PHP Notice:  Undefined index: textwarna in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 17
+[23-Jan-2019 09:36:02 UTC] PHP Notice:  Undefined index: posting in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 10
+[24-Jan-2019 08:33:54 Asia/Jakarta] PHP Warning:  move_uploaded_file(../../../images/slide/slider_3.jpg): failed to open stream: No such file or directory in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 36
+[24-Jan-2019 08:33:54 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpUfnxys' to '../../../images/slide/slider_3.jpg' in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 36
+[24-Jan-2019 01:33:58 UTC] PHP Notice:  Undefined index: posting in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 10
+[24-Jan-2019 08:49:13 Asia/Jakarta] PHP Warning:  move_uploaded_file(../../../images/slide/Untitled-3.jpg): failed to open stream: No such file or directory in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 36
+[24-Jan-2019 08:49:13 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php0Risrp' to '../../../images/slide/Untitled-3.jpg' in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 36
+[24-Jan-2019 01:49:41 UTC] PHP Notice:  Undefined index: posting in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 10
+[24-Jan-2019 08:51:44 Asia/Jakarta] PHP Warning:  move_uploaded_file(../../../images/slide/Untitled-3.jpg): failed to open stream: No such file or directory in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 36
+[24-Jan-2019 08:51:44 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpVkKVNv' to '../../../images/slide/Untitled-3.jpg' in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 36
+[24-Jan-2019 01:52:03 UTC] PHP Notice:  Undefined index: posting in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 10
+[24-Jan-2019 08:52:55 Asia/Jakarta] PHP Warning:  move_uploaded_file(../../../images/slide/Untitled-3.jpg): failed to open stream: No such file or directory in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 36
+[24-Jan-2019 08:52:55 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpJkvTsy' to '../../../images/slide/Untitled-3.jpg' in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 36
+[24-Jan-2019 02:54:09 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 02:54:09 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 02:55:23 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 02:55:23 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 02:58:19 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 02:58:19 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 02:58:43 UTC] PHP Notice:  Undefined index: editmenus in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 36
+[24-Jan-2019 02:58:43 UTC] PHP Notice:  Undefined index: menuid in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 57
+[24-Jan-2019 03:23:02 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 03:23:02 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 03:39:28 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 03:39:28 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 03:40:23 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 03:40:23 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 03:48:14 UTC] PHP Notice:  Undefined index: posting in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 10
+[24-Jan-2019 04:00:51 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:00:51 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 04:02:49 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:02:49 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 04:03:54 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:03:54 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 04:04:21 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:04:21 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 04:05:06 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:05:06 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 04:05:50 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:05:50 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 04:06:14 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:06:14 UTC] PHP Notice:  Undefined index: link in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 47
+[24-Jan-2019 04:06:54 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:10:09 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:13:55 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:17:24 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:19:31 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:21:17 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:22:43 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 44
+[24-Jan-2019 04:23:53 UTC] PHP Notice:  Undefined index: posting in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 10
+[24-Jan-2019 11:24:40 Asia/Jakarta] PHP Warning:  move_uploaded_file(../../../images/slide/slider_3.jpg): failed to open stream: No such file or directory in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 37
+[24-Jan-2019 11:24:40 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpYuB44t' to '../../../images/slide/slider_3.jpg' in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 37
+[24-Jan-2019 04:24:58 UTC] PHP Notice:  Undefined index: editmenus in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 36
+[24-Jan-2019 04:24:58 UTC] PHP Notice:  Undefined index: menuid in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 57
+[24-Jan-2019 04:25:09 UTC] PHP Notice:  Undefined index: editmenus in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 36
+[24-Jan-2019 04:25:09 UTC] PHP Notice:  Undefined index: menuid in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 57
+[24-Jan-2019 04:25:23 UTC] PHP Notice:  Undefined index: editmenus in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 36
+[24-Jan-2019 04:25:23 UTC] PHP Notice:  Undefined index: menuid in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 57
+[24-Jan-2019 04:25:27 UTC] PHP Notice:  Undefined index: editmenus in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 36
+[24-Jan-2019 04:25:27 UTC] PHP Notice:  Undefined index: menuid in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 57
+[24-Jan-2019 04:25:32 UTC] PHP Notice:  Undefined index: editmenus in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 36
+[24-Jan-2019 04:25:32 UTC] PHP Notice:  Undefined index: menuid in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 57
+[24-Jan-2019 04:25:38 UTC] PHP Notice:  Undefined index: editmenus in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 36
+[24-Jan-2019 04:25:38 UTC] PHP Notice:  Undefined index: menuid in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 57
+[24-Jan-2019 11:33:22 Asia/Jakarta] PHP Warning:  move_uploaded_file(../../../images/slide/Untitled-3.jpg): failed to open stream: No such file or directory in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 37
+[24-Jan-2019 11:33:22 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpWZ8OlO' to '../../../images/slide/Untitled-3.jpg' in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 37
+[24-Jan-2019 11:34:15 Asia/Jakarta] PHP Warning:  move_uploaded_file(../../../images/slide/Untitled-3.jpg): failed to open stream: No such file or directory in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 37
+[24-Jan-2019 11:34:15 Asia/Jakarta] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpRfm9Sw' to '../../../images/slide/Untitled-3.jpg' in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeleteslider.php on line 37
+[24-Jan-2019 04:52:24 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 84
+[24-Jan-2019 05:00:07 UTC] PHP Notice:  Undefined index: urutan in /home/blokcode/public_html/unigal/mimin/content/aksi/tambahmenu.php on line 84
+[24-Jan-2019 05:01:19 UTC] PHP Notice:  Undefined index: editmenus in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 36
+[24-Jan-2019 05:01:22 UTC] PHP Notice:  Undefined index: menuid in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 57
+[24-Jan-2019 05:01:26 UTC] PHP Notice:  Undefined index: editmenus in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 36
+[24-Jan-2019 05:01:26 UTC] PHP Notice:  Undefined index: menuid in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 57
+[24-Jan-2019 05:01:29 UTC] PHP Notice:  Undefined index: editmenus in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 36
+[24-Jan-2019 05:01:29 UTC] PHP Notice:  Undefined index: menuid in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 57
+[24-Jan-2019 05:01:32 UTC] PHP Notice:  Undefined index: editmenus in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 36
+[24-Jan-2019 05:01:32 UTC] PHP Notice:  Undefined index: menuid in /home/blokcode/public_html/unigal/mimin/content/aksi/editdeletemenu.php on line 57
