@@ -6,8 +6,10 @@
   $password = md5($password); 
     
 
-  $login  = mysqli_query($con, "SELECT * FROM user WHERE username = '$username' AND password='$password'");
-  $row    = mysqli_fetch_array($login);
+  $login  = $con->prepare("SELECT * FROM user WHERE username = ? AND password= ?");
+  $login->bind_param('ss', $username, $password);
+  $login->execute();
+  $row = $login->get_result()->fetch_array();
 
   if ((@$row['username']) AND (@$row['password']))
   {
