@@ -14,6 +14,11 @@ if (isset($_SESSION['username']) and ($_SESSION['password'])):
             <div class="box-header">
               <h3 class="box-title">Riwayat Peminjaman</h3>
             </div>
+            <div class="box-header">
+              <a href="home.php?page=sewafasilitas">
+                <input type="button" class='btn btn-success' value='Sewa Fasilitas'>
+              </a>
+            </div>
             <!-- /.box-header -->
             <div class="box-body table-responsive no-padding">
               <table id="example1" class="table table-bordered table-striped">
@@ -37,24 +42,44 @@ if (isset($_SESSION['username']) and ($_SESSION['password'])):
                 <tbody>
                   <?php 
                     $no=1;
-                    $rp =  $con->query("select * from riwayat_peminjaman");
+                    $rp =  $con->query("SELECT
+                    rpId AS ID,
+                    fsNama AS FASILITAS,
+                    trKpNama as KATEGORI,
+                    trKpDeskripsi AS KADES,
+                    rpKegiatan AS KEGIATAN,
+                    rpNamaPeminjam AS PENYEWA,
+
+                    rpNoTelepon AS NOTEL,
+                    rpEmail AS EMAIL,
+                    rpCatatan AS CATATAN,
+
+                    DATE_FORMAT(rpTanggalSewa, '%d %b %Y - %H:%i:%S') AS TSEWA,
+                    DATE_FORMAT(rpTanggalMulai, '%d %b %Y') AS TMULAI,
+                    DATE_FORMAT(rpTanggalSelesai, '%d %b %Y') AS TSELESAI,
+
+                    rpSuratPeminjaman AS SURAT
+
+                    FROM riwayat_peminjaman
+                    JOIN fasilitas ON rpFasilitas = fsId
+                    JOIN r_kategori_peminjaman ON rpKategori = trKpId");
                     while($data = $rp->fetch_assoc()):
                   ?>
                   <tr>
-                    <td><?php echo $no;?></td>
-                    <td><?php echo $data['rpFasilitas'];?></td>
-                    <td><?php echo $data['rpKategoriPeminjaman'];?></td>
-                    <td><?php echo $data['rpKegiatan'];?></td>
-                    <td><?php echo $data['rpNamaPeminjam'];?></td>
-                    <td><?php echo $data['rpNoTelepon'];?></td>
-                    <td><?php echo $data['rpEmail'];?></td>
-                    <td><?php echo $data['rpCatatan'];?></td>
-                    <td><?php echo $data['rpTanggalSewa'];?></td>
-                    <td><?php echo $data['rpTanggalMulai'];?></td>
-                    <td><?php echo $data['rpTanggalSelesai'];?></td>
+                    <td><?php echo $no++;?></td>
+                    <td><?php echo $data['FASILITAS'];?></td>
+                    <td title="<?php echo $data[KADES] ?>"><?php echo $data['KATEGORI'];?></td>
+                    <td><?php echo $data['KEGIATAN'];?></td>
+                    <td><?php echo $data['PENYEWA'];?></td>
+                    <td><?php echo $data['NOTEL'];?></td>
+                    <td><?php echo $data['EMAIL'];?></td>
+                    <td><?php echo $data['CATATAN'];?></td>
+                    <td><?php echo $data['TSEWA'];?></td>
+                    <td><?php echo $data['TMULAI'];?></td>
+                    <td><?php echo $data['TSELESAI'];?></td>
                     <td align='center'>
-                      <?php if($data['rpSuratPeminjaman'] != ''): ?>
-                      <a href="content/downloadfile.php?filename=<?php echo $data['rpSuratPeminjaman'];?>">
+                      <?php if($data['SURAT'] != ''): ?>
+                      <a href="content/downloadfile.php?filename=<?php echo $data['SURAT'];?>">
                         <i class='fa fa-download'> Unduh</i>
                       </a>
                       <?php 
@@ -64,8 +89,8 @@ if (isset($_SESSION['username']) and ($_SESSION['password'])):
                       ?>
                     </td>
                     <td>
-                      <a href="home.php?page=edit_download&id=<?php echo $data['id']?>"><i class='fa fa-edit'></i></a>
-                       | <a href="content/aksi/editdeletedownload.php?aksi=hapus&id=<?php echo $data['nama_file']?>&idd='<?php echo $data['id']?>'"><i class='fa fa-trash'></i></a>
+                      <a href="home.php?page=edit_penyewaan&id=<?php echo $data['ID']?>"><i class='fa fa-edit'></i></a>
+                       | <a href="content/aksi/editdeletepenyewaan.php?aksi=hapus&id=<?php echo $data[ID] ?>"><i class='fa fa-trash'></i></a>
                     </td>
                   </tr>
                   <?php 

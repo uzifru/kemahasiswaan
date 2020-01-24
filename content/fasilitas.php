@@ -27,9 +27,9 @@ if (isset($_SESSION['username']) and ($_SESSION['password'])):
             <h4 class="box-header" style="margin-right:3rem;">
               <b><?php echo $fasilitas['fsNama'] ?></b>
               <div class="pull-right">
-                <a href="home.php?page=editfasilitas&fsId=<?php echo $fasilitas['fsId']?>"><i class='fa fa-edit'></i></a>
+                <a href="home.php?page=editfasilitas&fsId=<?php echo $fasilitas['fsId']?>" title='Edit'><i class='fa fa-edit'></i></a>
                 |
-                <a href="content/aksi/editdeletefasilitas.php?aksi=hapus&fsId=<?php echo $fasilitas['fsId']?>"><i class='fa fa-trash'></i></a>
+                <a href="content/aksi/editdeletefasilitas.php?aksi=hapus&fsId=<?php echo $fasilitas['fsId']?>" title='Hapus'><i class='fa fa-trash'></i></a>
               </div>
             </h4>
             <!-- title -->

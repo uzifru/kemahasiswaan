@@ -28,12 +28,10 @@
         include"content/tambah_jenis_kegiatan.php";
     elseif($konten == 'editjeniskegiatan'):
         include"content/edit_jenis_kegiatan.php";
-    elseif($konten == 'hargasewa'):
-        include"content/harga.php";
-    elseif($konten == 'tambahharga'):
-        include"content/tambah_harga.php";
-    elseif($konten == 'editharga'):
-        include"content/edit_harga.php";
+    elseif($konten == 'sewafasilitas'):
+        include"content/sewa_fasilitas.php";
+    elseif($konten == 'editpeminjaman'):
+        include"content/edit_rincian_peminjaman.php";
     else:
         include"content/404.php";
     endif;

@@ -38,6 +38,8 @@
   <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="bower_components/select2/dist/css/select2.min.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <!-- Google Font -->
@@ -153,8 +155,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="home.php?page=fasilitas"><i class="fa fa-circle-o"></i> Data Fasilitas</a></li>
-            <li><a href="home.php?page=hargasewa"><i class="fa fa-circle-o"></i>Harga Sewa</a></li>
+            <li><a href="home.php?page=fasilitas"><i class="fa fa-circle-o"></i>Data Fasilitas</a></li>
             <li><a href="home.php?page=riwayatPeminjaman"><i class="fa fa-circle-o"></i>Riwayat Peminjaman</a></li>
             <li><a href="home.php?page=kategoriPeminjaman"><i class="fa fa-circle-o"></i>Kategori Peminjaman</a></li>
             <li><a href="home.php?page=jeniskegiatan"><i class="fa fa-circle-o"></i>Jenis Kegiatan</a></li>
@@ -248,6 +249,8 @@
 <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 <!-- datepicker -->
 <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!-- Select2 -->
+<script src="bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- Bootstrap WYSIHTML5 -->
 <script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <!-- Slimscroll -->
@@ -256,13 +259,23 @@
 <script src="bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
 <script>
   // desc berita
   $(function () {
+    $('.select2').select2();
+    $('#tanggal_pelaksanaan').datepicker({
+      format: "dd-M-yyyy",
+      clearBtn: true,
+      language: "id",
+      todayHighlight: true
+    });
+
+    $('.textarea').wysihtml5({
+      "image": false,
+    });
+
     $('#example1').DataTable({
       "order": [[ 3, "desc" ]],
       'paging'      : true,

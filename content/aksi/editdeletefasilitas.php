@@ -71,7 +71,7 @@ if (isset($_SESSION['username']) and ($_SESSION['password'])):
             $u_harga->close();
             header('Location: ../../home.php?page=fasilitas');
         endif;
-    elseif($aksi = 'hapus' and $id != ''):
+    elseif($aksi == 'hapus' and $id != ''):
             $g_foto = $con->query("SELECT fsFoto FROM fasilitas WHERE fsId = $kode");
             $d_foto = $g_foto->fetch_assoc();
             $d_fs = "DELETE FROM fasilitas WHERE fsId = $kode";
