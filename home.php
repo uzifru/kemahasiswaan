@@ -266,7 +266,7 @@
   $(function () {
     $('.select2').select2();
     $('#tanggal_pelaksanaan').datepicker({
-      format: "dd-M-yyyy",
+      format: "dd M yyyy",
       clearBtn: true,
       language: "id",
       todayHighlight: true
@@ -276,16 +276,102 @@
       "image": false,
     });
 
-    $('#example1').DataTable({
-      "order": [[ 3, "desc" ]],
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : true,
-      'ordering'    : true,
-      'info'        : true,
-      'pageLength'  : 10,
-      'autoWidth'   : true
-    })
+    /**
+     * fungsi untuk mengecek jadwal yang bentrok
+     */
+    function tabrak(jadwal, tanggal, induk, umpan, pesan) {
+      var tersedia = true;
+
+      for (var i = 0; i < jadwal.length; i++) {
+        var tmulai   = new Date(tanggal[0].value),
+            tselesai = new Date(tanggal[1].value);
+
+        if ((jadwal[i].mulai <= tselesai) && (tmulai <= jadwal[i].selesai)) {
+          induk.addClass('has-error');
+          umpan.text(pesan + jadwal[i].kegiatan);
+          umpan.show();
+          tersedia = false;
+          tanggal[0].setCustomValidity("jadwal bentrok dengan " + jadwal[i].kegiatan + ", mohon mengganti tanggal atau fasilitas yang digunakan");
+          tanggal[0].reportValidity();
+          tanggal[1].setCustomValidity("jadwal bentrok");
+          break;
+        } else { tersedia = true; }
+      }
+
+      if (tersedia) {
+        tanggal[0].setCustomValidity("");
+        tanggal[1].setCustomValidity("");
+        induk.removeClass('has-error');
+        umpan.hide();
+      }
+    }
+
+    $('#fasilitas').on("change", function(){
+      console.log('[change]');
+      $.ajax({
+        method: "POST",
+        url: 'content/ajaxe.php',
+        // contentType: "application/json; charset=utf-8",
+        data: {"aksi": "bea", "id": $(this).val()},
+        cache: true,
+      }).done(function(data) {
+        var result = $.parseJSON(data);
+        // console.log(result);
+        var kategori = $('#kategori');
+        var beasewa  = $('#beasewa');
+
+        beasewa.text(result[kategori.val()]); // pertama dipilih
+
+        kategori.change(function(){
+          $k_id = kategori.val();
+          beasewa.text(result[$k_id]);
+        });
+      });
+
+      $.ajax({
+        method: "POST",
+        url: 'content/ajaxe.php',
+        data: {"aksi": "jadwal", "id": $(this).val()},
+        success: function(data) {
+          var jadwal  = $.parseJSON(data),
+              rentang = $('#tanggal_pelaksanaan'),
+              umpan   = $('#tanggal_bentrok'),
+              tanggal = $('#tanggal_mulai, #tanggal_selesai');
+        
+          // console.log('[jadwal.luar]');
+          var fsid = jadwal.pop();
+          // console.log(fsid);
+
+          if (jadwal.length != 0) {
+            // ubah string menjadi objek Date
+            jadwal.forEach(function(part, index, self){
+              self[index].mulai   = new Date(self[index].mulai);
+              self[index].selesai = new Date(self[index].selesai);
+            });
+
+            // console.log('[jadwal.dalam]');
+            // console.log(jadwal);
+
+            // agar tetap mengecek saat fasilitas pertama dipilih
+            tabrak(jadwal, tanggal, rentang, umpan, " Bertepatan dengan acara ");
+
+            tanggal.on("change", function(){
+              if (fsid == $('#fasilitas').val()) {
+                // console.log("[tanggal.change]")
+                // console.log(jadwal);
+                tabrak(jadwal, tanggal, rentang, umpan, " Bertepatan dengan acara ");
+              }
+            });
+          } else {
+            rentang.removeClass('has-error');
+            umpan.hide();
+            tanggal[0].setCustomValidity("");
+            tanggal[1].setCustomValidity("");
+          }
+        }
+      });
+    });
+
     $('#kotaksaran').DataTable({
       "order": [[ 0, "asc" ]],
       'paging'      : true,
@@ -294,14 +380,6 @@
       'ordering'    : true,
       'info'        : true,
       'pageLength'  : 10,
-      'autoWidth'   : true
-    })
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : true,
-      'ordering'    : true,
-      'info'        : true,
       'autoWidth'   : true
     })
   })

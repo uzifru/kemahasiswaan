@@ -10,15 +10,15 @@ if (isset($_SESSION['username']) and ($_SESSION['password'])):
         <div class="col-xs-12">
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Sewa Fasilitas</h3>
+              <h2 class="box-title">Sewa Fasilitas</h2>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
             <form action="content/aksi/sewafasilitas.php" method="post" enctype="multipart/form-data" class="form-horizontal">
-              <div class="box-body">
+              <fieldset class="box-body" id="fset_kegiatan">
+                <div class="col-md-3"></div>
+                <legend class="col-md-8"><h4>Informasi Kegiatan</h4></legend>
                 <div class="form-group">
-                  <div class="col-md-3"></div>
-                  <div class="col-md-8"><label>Informasi Kegiatan</label></div>
                   <?php
                   $data_fs = $con->query("SELECT
                   fsId AS ID,
@@ -70,8 +70,11 @@ if (isset($_SESSION['username']) and ($_SESSION['password'])):
                         }
                         ?>
                       </select>
+                      <span class="input-group-addon" style="font-weight:600;">Rp</span>
+                      <pre class="input-group-addon" id="beasewa" style="width:11rem;max-width:30%;min-width:11rem;text-align:right;"></pre>
                     </div>
-                    <small class="help-block">Kategori menentukan bea sewa fasilitas</small>
+                    <small class="help-block hidden-xs" style="display:inline-block;">Kategori menentukan bea sewa fasilitas</small>
+                    <small class="help-block" style="width:10rem;float:right;">Bea Sewa</small>
                   </div>
                 </div>
                 <!-- / kategori -->
@@ -81,27 +84,29 @@ if (isset($_SESSION['username']) and ($_SESSION['password'])):
                     <div class="input-group"><span class="input-group-addon"><i class="fa fa-circle-o"></i></span>
                       <input type="text" name="kegiatan" id="kegiatan" class="form-control" required>
                     </div>
+                    <small class="help-block">Jenis kegiatan dan/atau nama kegiatan</small>
                   </div>
                 </div>
                 <!-- / kegiatan -->
                 <div class="form-group">
-                  <label for="tanggal" class="col-md-3 control-label has-required">Tanggal Pelaksanaan</label>
+                  <label for="tanggal_pelaksanaan" class="col-md-3 control-label has-required">Tanggal Pelaksanaan</label>
                   <div class="col-md-8">
                     <div class="input-daterange input-group" id="tanggal_pelaksanaan">
                       <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                      <input type="text" class="input-sm form-control" name="tanggal_mulai" id="tanggal_mulai">
+                      <input type="text" class="input-md form-control" name="tanggal_mulai" id="tanggal_mulai" placeholder="mulai">
                       <span class="input-group-addon">sampai</span>
-                      <input type="text" name="tanggal_selesai" id="tanggal_selesai" class="input-sm form-control">
+                      <input type="text" name="tanggal_selesai" id="tanggal_selesai" class="input-md form-control" placeholder="selesai">
                     </div>
                     <!-- /.input-group -->
+                    <div class="help-block" id="tanggal_bentrok" hidden></div>
                   </div>
                 </div>
                 <!-- tanggal pelaksanaan -->
-              </div>
+              </fieldset>
               <!-- /.box-body -->
-              <div class="box-body">
+              <fieldset class="box-body" id="fset_kontak">
                 <div class="col-md-3"></div>
-                <div class="col-md-8"><label>Informasi Kontak</label></div>
+                <legend class="col-md-8"><h4>Informasi Kontak</h4></legend>
                 <div class="form-group">
                   <label for="nama_peminjam" class="col-md-3 control-label has-required">Nama Penyewa</label>
                   <div class="col-md-8">
@@ -117,7 +122,7 @@ if (isset($_SESSION['username']) and ($_SESSION['password'])):
                   <div class="col-md-8">
                     <div class="input-group">
                       <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                      <input type="tel" name="no_telepon" id="no_telepon" class="form-control">
+                      <input type="tel" name="no_telepon" id="no_telepon" class="form-control" pattern="^(?:0|\(?\+?\d{2,3}\)?\s?)?(?:[\-\s]?\d{3,5}){2,4}$">
                     </div>
                     <!-- /.input-group -->
                   </div>
@@ -134,11 +139,11 @@ if (isset($_SESSION['username']) and ($_SESSION['password'])):
                   </div>
                 </div>
                 <!-- email -->
-              </div>
+              </fieldset>
               <!-- /.box-body -->
               <div class="box-body">
                 <div class="col-md-3"></div>
-                <div class="col-md-8"><label>Informasi Tambahan</label></div>
+                <legend class="col-md-8"><h4>Informasi Tambahan</h4></legend>
                 <div class="form-group">
                   <label for="catatan" class="col-md-3 control-label">Catatan</label>
                   <div class="col-md-8">
@@ -148,7 +153,10 @@ if (isset($_SESSION['username']) and ($_SESSION['password'])):
                 <div class="form-group">
                   <label for="surat" class="col-md-3 control-label">Berkas Lampiran</label>
                   <div class="col-md-8">
-                    <input type="file" name="surat" id="surat" accept="application/pdf">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="fa fa-file"></i></span>
+                      <input type="file" name="surat" id="surat" accept="application/pdf">
+                    </div>
                     <small class="help-block">Dapat berupa surat keterangan peminjaman dari lembaga terkait</small>
                   </div>
                 </div>
